@@ -15,14 +15,16 @@ public class Atividade3 {
 
         float media = (nota1 + nota2) / 2;
 
-        if(media >= 0 & media < 7){
-            System.out.println(nomeDoAluno + " obteve média " + media + " nesse bimestre e foi REPROVADO(A)!");
-        }
-        else if(media >= 7 & media < 10){
-            System.out.println(nomeDoAluno + " obteve média " + media + " nesse bimestre e foi APROVADO(A)!");
-        }
-        else if(media == 10){
-            System.out.println(nomeDoAluno + " obteve média " + media + " nesse bimestre e foi APROVADO(A) COM DISTINÇÃO!");
+        if((nota1 >= 0 & nota1 <= 10) & (nota2 >= 0 & nota2 <= 10)){
+            if(media < 7){
+                System.out.println(nomeDoAluno + " obteve média " + media + " nesse bimestre e foi REPROVADO(A)!");
+            }
+            else if(media >= 7 & media < 10){
+                System.out.println(nomeDoAluno + " obteve média " + media + " nesse bimestre e foi APROVADO(A)!");
+            }
+            else if(media == 10){
+                System.out.println(nomeDoAluno + " obteve média " + media + " nesse bimestre e foi APROVADO(A) COM DISTINÇÃO!");
+            }
         }
         else{
             System.out.println("NOTA INVÁLIDA!");

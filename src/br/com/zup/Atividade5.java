@@ -44,6 +44,5 @@ public class Atividade5 {
         else{
             System.out.println("VALOR INVÁLIDO!");
         }
-
     }
 }
