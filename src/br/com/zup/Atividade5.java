@@ -20,29 +20,31 @@ public class Atividade5 {
         System.out.print("Selecione um número correspondente ao dia da semana desejado: ");
         int diaEscolhido = leitor.nextInt();
 
-        if(diaEscolhido == 1){
-            System.out.println("Você escolheu domingo!");
-        }
-        else if(diaEscolhido == 2){
-            System.out.println("Você escolheu segunda-feira!");
-        }
-        else if(diaEscolhido == 3){
-            System.out.println("Você escolheu terça-feira!");
-        }
-        else if(diaEscolhido == 4){
-            System.out.println("Você escolheu quarta-feira!");
-        }
-        else if(diaEscolhido == 5){
-            System.out.println("Você escolheu quinta-feira!");
-        }
-        else if(diaEscolhido == 6){
-            System.out.println("Você escolheu sexta-feira!");
-        }
-        else if(diaEscolhido == 7){
-            System.out.println("Você escolheu sábado!");
-        }
-        else{
-            System.out.println("VALOR INVÁLIDO!");
+        switch (diaEscolhido){
+            case 1:
+                System.out.println("Você escolheu domingo!");
+                break;
+            case 2:
+                System.out.println("Você escolheu segunda-feira!");
+                break;
+            case 3:
+                System.out.println("Você escolheu terça-feira!");
+                break;
+            case 4:
+                System.out.println("Você escolheu quarta-feira!");
+                break;
+            case 5:
+                System.out.println("Você escolheu quinta-feira!");
+                break;
+            case 6:
+                System.out.println("Você escolheu sexta-feira!");
+                break;
+            case 7:
+                System.out.println("Você escolheu sábado!");
+                break;
+            default:
+                System.out.println("VALOR INVÁLIDO!");
+                break;
         }
     }
 }
